@@ -11,9 +11,6 @@ horasNormal=int(input("Introduzca la cantidad de horas que trabajó: "))
 horasNormal+=1
 for x in range(horasNormal):
     salarioHorasNormal=salarioBase*x
-print(f"por trabajar {horasNormal} horas tu pago es {salarioHorasNormal}")
-
-print("-----------------------------------------------------------------------")
 
 horasExtra=int(input("Introduzca la cantidad de horas extra que trabajó: "))
 for y in range(horasExtra):
@@ -21,18 +18,15 @@ for y in range(horasExtra):
     bon=bonificacionHorasExtra+salarioBase
     salarioHorasExtra+=bon
 
-print(f"La bonificación de 1 hora extra es de {bonificacionHorasExtra}")
-print(f"Por trabajar {horasExtra} tu pago es {salarioHorasExtra}")
-
-print("-----------------------------------------------------------------------")
-
 hijos=int(input("Introduzca la cantidad de hijos que tiene: "))
 for x in range(hijos):
     b=salarioBase*0.5
     bonificacionHijos+=b
-    print(f"La bonificacion del 50% por sus {hijos} es de {bonificacionHijos}")
 
 print("-----------------------------------------------------------------------")
-
+horasNormal-=1
 salarioFinal=bonificacionHijos+salarioHorasNormal+salarioHorasExtra
-print(f"El salario final es de {salarioFinal}")
+print(f"{nombre} tiene un salario total de ${salarioFinal}")
+print(f" ☆Pago por {horasNormal} horas trabajadas ${salarioHorasNormal}")
+print(f" ☆Pago por {horasExtra} horas trabajadas ${salarioHorasExtra}")
+print(f" ☆Bonificación total por {hijos} hijos ${bonificacionHijos}")
