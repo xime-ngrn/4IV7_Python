@@ -22,28 +22,28 @@ for i in range(cantPalabras):
                 valores.insert(j, value)
             diccionario[llave] = valores
             asociacionesMultiples += 1
-            break
+            continue
         if(asociacionesMultiples==1):
             for j in range(cantAsociaciones):
                 value = input("Introduce una asociación en inglés: ")
                 valores1.insert(j, value)
             diccionario[llave] = valores1
             asociacionesMultiples += 1
-            break
+            continue
         if(asociacionesMultiples==2):
             for j in range(cantAsociaciones):
                 value = input("Introduce una asociación en inglés: ")
                 valores2.insert(j, value)
             diccionario[llave] = valores2
             asociacionesMultiples += 1
-            break
+            continue
         if (asociacionesMultiples == 3):
             for j in range(cantAsociaciones):
                 value = input("Introduce una asociación en inglés: ")
                 valores3.insert(j, value)
             diccionario[llave] = valores3
             asociacionesMultiples += 1
-            break
+            continue
     else:
         value = input("Introduce una asociación en inglés: ")
         diccionario[llave] = value
