@@ -15,6 +15,8 @@ for i in range(cantPalabras):
 
     if(cantAsociaciones>1):
         #mala idea usar tuplas, no funcionan de igual forma
+        #IDEAAAAAAAA
+        #Crear listas infinitas como dios me de a entender
         for j in range(cantAsociaciones):
             val = list(valores)
             value = input("Introduce una asociación en inglés: ")
