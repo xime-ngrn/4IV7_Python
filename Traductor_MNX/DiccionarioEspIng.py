@@ -17,6 +17,7 @@ for i in range(cantPalabras):
             value = input("Introduce una asociación en inglés: ")
             valores.insert(j, value)
         diccionario[llaves] = valores
+        #no guarda nada en el diccionario
     else:
         value = input("Introduce una asociación en inglés: ")
         diccionario[llaves]=value
