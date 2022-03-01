@@ -10,16 +10,17 @@ cantPalabras=int(input("Introduce la cantidad de palabras que deseas agregar: ")
 for i in range(cantPalabras):
     pEspañol=input("Introduce tu palabra en español: ")
     llaves.insert(pEspañol)
+    global llaves
     cantAsociaciones = int(input("Introduce la cantidad de palabras en inglés deseadas: "))
-    for j in range(cantAsociaciones):
-        val=list(valores)
-        value = input("Introduce una asociación en inglés: ")
-        val[j]=value
-    valores=tuple(val)
-    diccionario[llaves]=valores
+
     if(cantAsociaciones>1):
-        value=input("Introduce una asociación en inglés: ")
-        valores.insert(value)
+        for j in range(cantAsociaciones):
+            val = list(valores)
+            value = input("Introduce una asociación en inglés: ")
+            val[j] = value
+            global val
+        valores = tuple(val)
+        diccionario[llaves] = valores
     else:
         value = input("Introduce una asociación en inglés: ")
         diccionario[llaves]=value
