@@ -15,10 +15,10 @@ for i in range(cantPalabras):
 
     if(cantAsociaciones>1):
         for j in range(cantAsociaciones):
-            global valores
             value = input("Introduce una asociación en inglés: ")
             valores.insert(j, value)
             print("||||| Terminó de agregar el valor, wiiii")
+
         diccionario[llave] = valores
     else:
         value = input("Introduce una asociación en inglés: ")
