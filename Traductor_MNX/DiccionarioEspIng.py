@@ -1,7 +1,7 @@
 cantPalabras=0
 diccionario={}
 #llaves=[]
-valores=[]
+valores=()
 
 print("*****Bienvenido*****")
 print("Diccionario de Español-Inglés")
@@ -14,11 +14,12 @@ for i in range(cantPalabras):
     cantAsociaciones = int(input("Introduce la cantidad de palabras en inglés deseadas: "))
 
     if(cantAsociaciones>1):
+        #mala idea usar tuplas, no funcionan de igual forma
         for j in range(cantAsociaciones):
+            val = list(valores)
             value = input("Introduce una asociación en inglés: ")
-            valores.insert(j, value)
-            print("||||| Terminó de agregar el valor, wiiii")
-
+            val.insert(j,value)
+        valores = tuple(val)
         diccionario[llave] = valores
     else:
         value = input("Introduce una asociación en inglés: ")
