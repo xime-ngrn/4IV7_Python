@@ -16,6 +16,7 @@ for i in range(cantPalabras):
     llave=input("Introduce tu palabra en español: ")
     if(llave in repeticiones):
         print("¡ERROR!")
+        print("La palabra en español ya esta en el diccionario")
     else:
         repeticiones.append(llave)
         cantAsociaciones = int(input("Introduce la cantidad de palabras en inglés deseadas: "))
@@ -58,3 +59,5 @@ print(diccionario)
 print("*******************")
 print(diccionario.keys())
 print("********************")
+
+frase=input("Introduce una frase en español: ")
